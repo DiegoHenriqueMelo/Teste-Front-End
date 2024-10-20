@@ -10,6 +10,9 @@ html,
 body {
   overflow-x: hidden;
 }
+.meun-dropdown {
+  display: none;
+}
 
 /*! BODY */
 body {
@@ -118,21 +121,53 @@ main {
   padding: 5px 10px;
   border-radius: 5px;
 }
-.ver-mais{
-    padding: 10px 10px;
-    border-radius: 5px;
+.ver-mais {
+  padding: 10px 10px;
+  border-radius: 5px;
 }
 
 /*! ASIDE */
 aside {
   grid-area: aside;
-  border: 1px solid green;
   width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  background-repeat: no-repeat;
+}
+h4 {
+  text-align: center;
+}
+aside form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+aside form input {
+  padding: 5px 5px;
+}
+aside form button {
+  padding: 5px 50px;
 }
 
 /*! FOOTER */
 footer {
   grid-area: footer;
-  border: 1px solid red;
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 10px ;
+}
+.redes img{
+    height: 30px;
 }

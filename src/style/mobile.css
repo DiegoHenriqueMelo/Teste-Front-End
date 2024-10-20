@@ -35,6 +35,8 @@ header {
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #f8f6f2;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.178);
 }
 .header-superior {
   display: flex;
@@ -55,12 +57,14 @@ header button {
   height: 50px;
   border-radius: 10px;
   border: none;
+  background-color: #7de3b0;
 }
 header input {
   padding: 10px;
   margin: auto;
   width: 80vw;
   border-radius: 10px;
+  border: 2px solid #69593c;
 }
 
 /*! MAIN */
@@ -68,10 +72,14 @@ main {
   grid-area: main;
   height: auto;
   width: 100%;
+  margin: 10px 0px 0px 0px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
+}
+h2 {
+  color: #69593c;
 }
 .product {
   padding: 20px;
@@ -100,30 +108,42 @@ main {
 }
 .principal h3 {
   text-align: center;
+  color: #69593c;
 }
 .principal button {
   padding: 7px;
   gap: 5px;
   border-radius: 5px;
   opacity: 0px;
+  background-color: #7de3b0;
+  color: white;
+  border: none;
 }
 .old-price {
   text-decoration: line-through;
   display: none;
+  color: #69593c;
 }
 .new-price {
   font-weight: 700;
   font-size: 30px;
   margin: 0px 10px 13px 20px;
+  color: #7de3b0;
 }
 .btn-mobile {
   margin: 20px 0px;
   padding: 5px 10px;
   border-radius: 5px;
+  background-color: #7de3b0;
+  color: white;
+  border: none;
 }
 .ver-mais {
   padding: 10px 10px;
   border-radius: 5px;
+  background-color: #7de3b0;
+  color: white;
+  border: none;
 }
 
 /*! ASIDE */
@@ -134,10 +154,11 @@ aside {
   display: flex;
   flex-flow: column nowrap;
   gap: 20px;
-  background-repeat: no-repeat;
+  background-color: #f9e0e4;
 }
 h4 {
   text-align: center;
+  color: #69593c;
 }
 aside form {
   display: flex;
@@ -147,10 +168,16 @@ aside form {
   gap: 10px;
 }
 aside form input {
+  border-radius: 5px;
   padding: 5px 5px;
+  border: none;
 }
 aside form button {
+  border-radius: 5px;
   padding: 5px 50px;
+  background-color: #7de3b0;
+  color: white;
+  border: none;
 }
 
 /*! FOOTER */
@@ -161,13 +188,15 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
+  padding: 30px 10px;
 }
-footer ul{
-    list-style-type: none;
+footer ul {
+  list-style-type: none;
 }
-li{
-    margin-bottom: 10px ;
+li {
+  color: #7de3b0;
+  margin-bottom: 10px;
 }
-.redes img{
-    height: 30px;
+.redes img {
+  height: 30px;
 }

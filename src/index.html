@@ -1,132 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/mobile.css" />
-    <title>Primeira Moda</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-superior">
-        <nav>
-          <p>nav</p>
-          <ul class="meun-dropdown">
-            <li>Menians</li>
-            <li>Meninos</li>
-            <li>Acessório</li>
-            <li>Alimentação</li>
-            <li>Higiene e cuidados com o bebê</li>
-            <li>Mamãe</li>
-            <li>Ofertas</li>
-          </ul>
-        </nav>
-        <h1>
-          <img src="img/logo-primeira-moda.png" alt="" />
-        </h1>
-        <button>Carrinho</button>
-      </div>
-      <div class="header-inferior">
-        <input type="text" placeholder="O que você procura hoje?" />
-      </div>
-    </header>
-    <main>
-      <h2>Lançamentos</h2>
-      <div class="vitrine">
-        <div class="product">
-          <div class="img-product"></div>
-          <div class="principal">
-            <h3>Kit Bodies manga longa carters 4 peças</h3>
-            <button>34% OFF</button>
-            <p class="old-price">R$144,90</p>
-          </div>
-          <p class="new-price">R$75,90</p>
-          <hr />
-          <p>3X de R$25,30 Sem juros</p>
-          <button class="btn-mobile">Que fofo, eu quero!</button>
-        </div>
-        <div class="product">
-            <div class="img-product"></div>
-            <div class="principal">
-              <h3>Kit Bodies manga longa carters 4 peças</h3>
-              <button>34% OFF</button>
-              <p class="old-price">R$144,90</p>
-            </div>
-            <p class="new-price">R$75,90</p>
-            <hr />
-            <p>3X de R$25,30 Sem juros</p>
-            <button class="btn-mobile">Que fofo, eu quero!</button>
-          </div>
-          <div class="product">
-            <div class="img-product"></div>
-            <div class="principal">
-              <h3>Kit Bodies manga longa carters 4 peças</h3>
-              <button>34% OFF</button>
-              <p class="old-price">R$144,90</p>
-            </div>
-            <p class="new-price">R$75,90</p>
-            <hr />
-            <p>3X de R$25,30 Sem juros</p>
-            <button class="btn-mobile">Que fofo, eu quero!</button>
-          </div>
-          <div class="product">
-            <div class="img-product"></div>
-            <div class="principal">
-              <h3>Kit Bodies manga longa carters 4 peças</h3>
-              <button>34% OFF</button>
-              <p class="old-price">R$144,90</p>
-            </div>
-            <p class="new-price">R$75,90</p>
-            <hr />
-            <p>3X de R$25,30 Sem juros</p>
-            <button class="btn-mobile">Que fofo, eu quero!</button>
-          </div>
-          <div class="product">
-            <div class="img-product"></div>
-            <div class="principal">
-              <h3>Kit Bodies manga longa carters 4 peças</h3>
-              <button>34% OFF</button>
-              <p class="old-price">R$144,90</p>
-            </div>
-            <p class="new-price">R$75,90</p>
-            <hr />
-            <p>3X de R$25,30 Sem juros</p>
-            <button class="btn-mobile">Que fofo, eu quero!</button>
-          </div>
-      </div>
-      <br />
-      <button class="ver-mais">Ver todos os produtos</button>
-    </main>
-    <aside>
-      <h4>Nossa Newslatter</h4>
-      <form action="">
-          <input type="email" name="" id="" placeholder="E-mail"/>
-          <input type="text" name="" id="" placeholder="Nome Completo"/>
-          <button type="submit">Me inscrever</button>
-      </form>
-    </aside>
-    <footer>
-        <ul>
-            <li>Institucional
-                <ul class="meun-dropdown">
-                    <li>Inicio</li>
-                    <li>Quam Somos</li>
-                    <li>Fale Conosco</li>
-                </ul>
-            </li>
-            <li>Minha Conta
-                <ul class="meun-dropdown">
-                    <li>Entrar</li>
-                    <li>Criar Conta</li>
-                </ul>
-            </li>
-            <li>Fale Conosco</li>
-            <li>Redes Sociais</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/mobile.css" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,keyboard_arrow_right,menu,search,shopping_cart" />
+
+</head>
+
+<body>
+  <header>
+    <div class="header-superior">
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <span class="material-symbols-outlined"> menu </span>
+            <ul class="meun-dropdown">
+              <li>Menians</li>
+              <li>Meninos</li>
+              <li>Acessório</li>
+              <li>Alimentação</li>
+              <li>Higiene e cuidados com o bebê</li>
+              <li>Mamãe</li>
+              <li>Ofertas</li>
+            </ul>
+          </li>
         </ul>
-      <div class="redes">
-          <img src="img/vetor/vetorFacebook.png" alt="" />
-          <img src="img/vetor/vetorInstagram.png" alt="" />
+      </nav>
+      <h1>
+        <img src="img/logo-primeira-moda.png" alt="" />
+      </h1>
+      <button>
+        <span class="material-symbols-outlined" style="color: white">
+          shopping_cart
+        </span>
+      </button>
+    </div>
+    <div class="header-inferior">
+      <div class="search">
+        <input type="text" placeholder="O que você procura hoje? " /><span class="material-symbols-outlined">
+          search
+        </span>
       </div>
-    </footer>
-  </body>
+    </div>
+  </header>
+  <main>
+    <h2>Lançamentos</h2>
+    <div class="vitrine">
+      <div class="product">
+        <div class="img-product"></div>
+        <div class="principal">
+          <h3>Kit Bodies manga longa carters 4 peças</h3>
+          <button>34% OFF</button>
+          <p class="old-price">R$144,90</p>
+        </div>
+        <p class="new-price">R$75,90</p>
+        <hr />
+        <p>3X de R$25,30 Sem juros</p>
+        <button class="btn-mobile">Que fofo, eu quero!</button>
+      </div>
+      <div class="product">
+        <div class="img-product"></div>
+        <div class="principal">
+          <h3>Kit Bodies manga longa carters 4 peças</h3>
+          <button>34% OFF</button>
+          <p class="old-price">R$144,90</p>
+        </div>
+        <p class="new-price">R$75,90</p>
+        <hr />
+        <p>3X de R$25,30 Sem juros</p>
+        <button class="btn-mobile">Que fofo, eu quero!</button>
+      </div>
+      <div class="product">
+        <div class="img-product"></div>
+        <div class="principal">
+          <h3>Kit Bodies manga longa carters 4 peças</h3>
+          <button>34% OFF</button>
+          <p class="old-price">R$144,90</p>
+        </div>
+        <p class="new-price">R$75,90</p>
+        <hr />
+        <p>3X de R$25,30 Sem juros</p>
+        <button class="btn-mobile">Que fofo, eu quero!</button>
+      </div>
+      <div class="product">
+        <div class="img-product"></div>
+        <div class="principal">
+          <h3>Kit Bodies manga longa carters 4 peças</h3>
+          <button>34% OFF</button>
+          <p class="old-price">R$144,90</p>
+        </div>
+        <p class="new-price">R$75,90</p>
+        <hr />
+        <p>3X de R$25,30 Sem juros</p>
+        <button class="btn-mobile">Que fofo, eu quero!</button>
+      </div>
+      <div class="product">
+        <div class="img-product"></div>
+        <div class="principal">
+          <h3>Kit Bodies manga longa carters 4 peças</h3>
+          <button>34% OFF</button>
+          <p class="old-price">R$144,90</p>
+        </div>
+        <p class="new-price">R$75,90</p>
+        <hr />
+        <p>3X de R$25,30 Sem juros</p>
+        <button class="btn-mobile">Que fofo, eu quero!</button>
+      </div>
+    </div>
+    <br />
+    <button class="ver-mais">Ver todos os produtos</button>
+  </main>
+  <aside>
+    <h4><img src="./img/vetor/mail.png" alt=""> Nossa Newslatter</h4>
+    <form action="">
+      <input type="email" name="" id="" placeholder="E-mail" />
+      <input type="text" name="" id="" placeholder="Nome Completo" />
+      <button type="submit">
+        Me inscrever<span class="material-symbols-outlined">
+          keyboard_arrow_right
+        </span>
+      </button>
+    </form>
+  </aside>
+  <footer>
+    <ul>
+      <li>
+        Institucional<span class="material-symbols-outlined">
+          add
+        </span>
+        <ul class="meun-dropdown">
+          <li>Inicio</li>
+          <li>Quam Somos</li>
+          <li>Fale Conosco</li>
+        </ul>
+      </li>
+      <li>
+        Minha Conta<span class="material-symbols-outlined">
+          add
+        </span>
+        <ul class="meun-dropdown">
+          <li>Entrar</li>
+          <li>Criar Conta</li>
+        </ul>
+      </li>
+      <li>Fale Conosco<span class="material-symbols-outlined">
+          add
+        </span></li>
+      <li>Redes Sociais</li>
+    </ul>
+    <div class="redes">
+      <img src="img/vetor/vetorFacebook.png" alt="" />
+      <img src="img/vetor/vetorInstagram.png" alt="" />
+    </div>
+  </footer>
+</body>
+
 </html>

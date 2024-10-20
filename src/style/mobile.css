@@ -48,6 +48,16 @@ header {
 .header-inferior {
   margin: auto;
 }
+.nav-menu {
+  list-style-type: none;
+}
+.nav-menu li {
+  color: black;
+}
+.nav-menu li span img {
+  height: 30px;
+  width: 30px;
+}
 header img {
   height: 50px;
   width: 100px;
@@ -59,12 +69,24 @@ header button {
   border: none;
   background-color: #7de3b0;
 }
+header button img {
+  height: 30px;
+  width: 30px;
+}
+.search {
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #69593c;
+  display: flex;
+  align-items: center;
+}
 header input {
   padding: 10px;
   margin: auto;
   width: 80vw;
   border-radius: 10px;
-  border: 2px solid #69593c;
+  border: none;
 }
 
 /*! MAIN */
@@ -104,7 +126,7 @@ h2 {
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
-  margin: 20px;
+  margin: 0px 20px 20px 0px;
 }
 .principal h3 {
   text-align: center;
@@ -156,9 +178,18 @@ aside {
   gap: 20px;
   background-color: #f9e0e4;
 }
+aside img {
+  height: 30px;
+  width: 30px;
+}
 h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   text-align: center;
   color: #69593c;
+
 }
 aside form {
   display: flex;
@@ -178,6 +209,10 @@ aside form button {
   background-color: #7de3b0;
   color: white;
   border: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /*! FOOTER */
@@ -196,6 +231,9 @@ footer ul {
 li {
   color: #7de3b0;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .redes img {
   height: 30px;

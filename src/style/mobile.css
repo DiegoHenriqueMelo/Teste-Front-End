@@ -100,6 +100,15 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.banner{
+  display: none;
+}
+.info-site{
+  display: none;
+}
+.info-produtos{
+  display: none;
+}
 h2 {
   color: #69593c;
 }
@@ -240,4 +249,7 @@ li {
 }
 .redes img {
   height: 30px;
+}
+.footer-media-query{
+  display: none;
 }

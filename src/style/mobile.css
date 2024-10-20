@@ -132,6 +132,10 @@ h2 {
   text-align: center;
   color: #69593c;
 }
+a {
+  text-decoration: none;
+  color: #69593c;
+}
 .principal button {
   padding: 7px;
   gap: 5px;
@@ -149,8 +153,8 @@ h2 {
 .new-price {
   font-weight: 700;
   font-size: 30px;
-  margin: 0px 10px 13px 20px;
   color: #7de3b0;
+  margin-bottom: 50px;
 }
 .btn-mobile {
   margin: 20px 0px;
@@ -189,7 +193,6 @@ h4 {
   gap: 5px;
   text-align: center;
   color: #69593c;
-
 }
 aside form {
   display: flex;

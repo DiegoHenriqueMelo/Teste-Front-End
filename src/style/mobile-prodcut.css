@@ -259,23 +259,41 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.section-coments input {
-  margin: 20px;
-  width: 80%;
-  height: 30%;
-  border-radius: 5px;
-}
-.section-coments button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+.section-coments input{
+    width: 80%;
+    height: 100px;
+    margin-bottom: 30px;
 }
 .post{
     background-color: #69593C;
+    border-radius: 5px;
+    border: none;
     color: white;
     font-weight: 700;
-
+    padding: 10px;
 }
+.comentario{
+    margin: 20px;
+}
+.foto-coment{
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/fotoComent.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.coment{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.info{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*! SECTION */
 section {
   grid-area: section;

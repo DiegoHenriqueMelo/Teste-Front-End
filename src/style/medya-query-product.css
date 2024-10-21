@@ -25,6 +25,17 @@
   .menu-dropdown {
     display: none;
   }
+  main{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .route{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+  }
   .vitrine {
     display: flex;
     flex-direction: row-reverse wrap;
@@ -133,6 +144,12 @@
   }
   .principal{
     width: 50%;
+  }
+  aside form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
   }
   .footer-mobile {
     display: none;

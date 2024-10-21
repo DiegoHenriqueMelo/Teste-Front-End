@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/mobile-prodcut.css" />
     <link rel="stylesheet" href="style/medya-query-product.css">
+    <script src="script/script.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,keyboard_arrow_right,menu,search,shopping_cart" />
@@ -18,7 +19,7 @@
             <div class="header-superior">
                 <nav>
                     <ul class="nav-menu">
-                        <li>
+                        <li class="gaveta">
                             <span class="material-symbols-outlined"> menu </span>
                             <ul class="meun-dropdown">
                                 <li>Menians</li>
@@ -39,7 +40,7 @@
                     <span class="material-symbols-outlined" style="color: white">
                         shopping_cart
                     </span>
-                    <p class="qtd-inte-cart">0</p>
+                    <p class="qtd-inte-cart">1</p>
                 </button>
             </div>
             <div class="">
@@ -84,7 +85,7 @@
                 <span class="material-symbols-outlined" style="color: white">
                     shopping_cart
                 </span>
-                <p class="qtd-inte-cart">0</p>
+                <p class="qtd-inte-cart">1</p>
             </button>
             <ul class="menu-media-query">
                 <li>Menians</li>
@@ -155,15 +156,20 @@
                     <div>
                         <div>
                             <p>Quantidade</p>
-                            <button>-</button>
-                            <p class="qtd" style="background-color: white; border: none;">0</p>
-                            <button>+</button>
+                            <button onclick="diminuiQtd()" id="diminuir">-</button>
+                            <p id="qtd" style="background-color: white; border: none;">0</p>
+                            <button onclick="aumentaQtd()" id="aumentar">+</button>
                         </div>
                     </div>
                     <br>
-                    <div class="buy"> <span class="material-symbols-outlined" style="color: white">
+                    <!-- <div id="buy" onclick="buyItenCart()"> <span class="material-symbols-outlined" style="color: white">
                             shopping_cart
-                        </span>Comprar Agora</div>
+                        </span>Comprar Agora</div> -->
+                        <button id="buy">
+                            <span class="material-symbols-outlined" style="color: white">
+                                shopping_cart
+                            </span>Comprar Agora
+                        </button>
                 </div>
                 <div class="compartilhar">
                     <div class="redes-product">
@@ -291,149 +297,150 @@
     </aside>
     <footer>
         <div class="footer-mobile">
-          <ul>
-            <li>
-              Institucional<span class="material-symbols-outlined">
-                add
-              </span>
-              <ul class="meun-dropdown">
-                <li>Inicio</li>
-                <li>Quam Somos</li>
-                <li>Fale Conosco</li>
-              </ul>
-            </li>
-            <li>
-              Minha Conta<span class="material-symbols-outlined">
-                add
-              </span>
-              <ul class="meun-dropdown">
-                <li>Entrar</li>
-                <li>Criar Conta</li>
-              </ul>
-            </li>
-            <li>Fale Conosco<span class="material-symbols-outlined">
-                add
-              </span></li>
-            <li>Redes Sociais</li>
-          </ul>
-          <div class="redes">
-            <img src="img/vetor/vetorFacebook.png" alt="" />
-            <img src="img/vetor/vetorInstagram.png" alt="" />
-          </div>
+            <ul>
+                <li>
+                    Institucional<span class="material-symbols-outlined">
+                        add
+                    </span>
+                    <ul class="meun-dropdown">
+                        <li>Inicio</li>
+                        <li>Quam Somos</li>
+                        <li>Fale Conosco</li>
+                    </ul>
+                </li>
+                <li>
+                    Minha Conta<span class="material-symbols-outlined">
+                        add
+                    </span>
+                    <ul class="meun-dropdown">
+                        <li>Entrar</li>
+                        <li>Criar Conta</li>
+                    </ul>
+                </li>
+                <li>Fale Conosco<span class="material-symbols-outlined">
+                        add
+                    </span></li>
+                <li>Redes Sociais</li>
+            </ul>
+            <div class="redes">
+                <img src="img/vetor/vetorFacebook.png" alt="" />
+                <img src="img/vetor/vetorInstagram.png" alt="" />
+            </div>
         </div>
         <div class="footer-media-query">
-          <div class="options-footer">
-            <div>
-              <p>Meninas</p>
-              <ul>
-                <li>Bodies
-                  <ul class="meun-dropdown">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </li>
-                <li>Conjuntos</li>
-                <li>Macacões</li>
-                <li>Manga curta</li>
-                <li>Manga longa</li>
-              </ul>
+            <div class="options-footer">
+                <div>
+                    <p>Meninas</p>
+                    <ul>
+                        <li>Bodies
+                            <ul class="meun-dropdown">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>Conjuntos</li>
+                        <li>Macacões</li>
+                        <li>Manga curta</li>
+                        <li>Manga longa</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Meninos</p>
+                    <ul>
+                        <li>Bodies
+                            <ul class="meun-dropdown">
+                                <li></li>
+                                <li></li>
+                                <li> </li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>Conjuntos</li>
+                        <li>Macacões</li>
+                        <li>Manga curta</li>
+                        <li>Manga longa</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Acessórios</p>
+                    <ul>
+                        <li>Brinquedos/ Mordedores</li>
+                        <li>Chupetas</li>
+                        <li>Cobertores/ Mantas</li>
+                        <li>Babá Eletrônicas/ Termômetros</li>
+                        <li>Segurança</li>
+                        <li>Skip Hop</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Alimentação</p>
+                    <ul>
+                        <li>Mamadeiras</li>
+                        <li>Utensilios</li>
+                        <li>Vitaminas</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Higiene e cuidados com o bebê</p>
+                    <ul>
+                        <li>Banho</li>
+                        <li>Colicas</li>
+                        <li>Alívio de gripes e resfriados</li>
+                        <li>Pele</li>
+                        <li>Dentes</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Mamãe</p>
+                    <ul>
+                        <li>Gravidez</li>
+                        <li>Amamentação</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ofertas</p>
+                </div>
+                <div>
+                    <p>Institucional</p>
+                    <ul>
+                        <li>Página Inicial</li>
+                        <li>Quem Somos</li>
+                        <li>Fale Conosco</li>
+                        <li>Criar conta</li>
+                        <li>Entrar</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-              <p>Meninos</p>
-              <ul>
-                <li>Bodies
-                  <ul class="meun-dropdown">
-                    <li></li>
-                    <li></li>
-                    <li> </li>
-                    <li></li>
-                  </ul>
-                </li>
-                <li>Conjuntos</li>
-                <li>Macacões</li>
-                <li>Manga curta</li>
-                <li>Manga longa</li>
-              </ul>
+            <div class="redes">
+                <img src="img/vetor/vetorFacebook.png" alt="" />
+                <img src="img/vetor/vetorInstagram.png" alt="" />
             </div>
-            <div>
-              <p>Acessórios</p>
-              <ul>
-                <li>Brinquedos/ Mordedores</li>
-                <li>Chupetas</li>
-                <li>Cobertores/ Mantas</li>
-                <li>Babá Eletrônicas/ Termômetros</li>
-                <li>Segurança</li>
-                <li>Skip Hop</li>
-              </ul>
+            <br>
+            <div class="info-site-footer">
+                <div>
+                    <img src="img/icon-boleto.png" alt="">
+                    <p><strong>Pagamento por boleto</strong></p>
+                    <p>Mais um meio de pagamento para facilitar</p>
+                </div>
+                <div>
+                    <img src="img/card.png" alt="">
+                    <p><strong>Até 3 vezes</strong></p>
+                    <p>Com todos os cartões de crédito</p>
+                </div>
+                <div>
+                    <img src="img/icon-seguranca.png" alt="">
+                    <p><strong>Site Seguro</strong></p>
+                    <p>Protegemos seus dados</p>
+                </div>
             </div>
-            <div>
-              <p>Alimentação</p>
-              <ul>
-                <li>Mamadeiras</li>
-                <li>Utensilios</li>
-                <li>Vitaminas</li>
-              </ul>
-            </div>
-            <div>
-              <p>Higiene e cuidados com o bebê</p>
-              <ul>
-                <li>Banho</li>
-                <li>Colicas</li>
-                <li>Alívio de gripes e resfriados</li>
-                <li>Pele</li>
-                <li>Dentes</li>
-              </ul>
-            </div>
-            <div>
-              <p>Mamãe</p>
-              <ul>
-                <li>Gravidez</li>
-                <li>Amamentação</li>
-              </ul>
-            </div>
-            <div>
-              <p>Ofertas</p>
-            </div>
-            <div>
-              <p>Institucional</p>
-              <ul>
-                <li>Página Inicial</li>
-                <li>Quem Somos</li>
-                <li>Fale Conosco</li>
-                <li>Criar conta</li>
-                <li>Entrar</li>
-              </ul>
-            </div>
-          </div>
-          <div class="redes">
-            <img src="img/vetor/vetorFacebook.png" alt="" />
-            <img src="img/vetor/vetorInstagram.png" alt="" />
-          </div>
-          <br>
-          <div class="info-site-footer">
-            <div>
-              <img src="img/icon-boleto.png" alt="">
-              <p><strong>Pagamento por boleto</strong></p>
-              <p>Mais um meio de pagamento para facilitar</p>
-            </div>
-            <div>
-              <img src="img/card.png" alt="">
-              <p><strong>Até 3 vezes</strong></p>
-              <p>Com todos os cartões de crédito</p>
-            </div>
-            <div>
-              <img src="img/icon-seguranca.png" alt="">
-              <p><strong>Site Seguro</strong></p>
-              <p>Protegemos seus dados</p>
-            </div>
-          </div>
-          <br>
-          <span style="color: #999999;">Copyright Primeira Moda Roupas e Produtos Importados Ltda - 2020. Todos os direitos
-            reservados.<span>
+            <br>
+            <span style="color: #999999;">Copyright Primeira Moda Roupas e Produtos Importados Ltda - 2020. Todos os
+                direitos
+                reservados.<span>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>

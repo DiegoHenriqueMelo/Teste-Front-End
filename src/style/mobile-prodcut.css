@@ -40,6 +40,9 @@ header {
   background-color: #f8f6f2;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.178);
 }
+.header-media-query{
+  display: none;
+}
 .header-superior {
   display: flex;
   justify-content: space-around;
@@ -253,6 +256,11 @@ p {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+.nav-div p:hover{
+  color: #69593C;
+  border-bottom: 2px solid #69593C;
+  transition: .5s;
+}
 .header-section {
   display: flex;
   flex-flow: row nowrap;
@@ -260,9 +268,10 @@ p {
   align-items: center;
 }
 .section-coments input{
-    width: 80%;
+    width: 90%;
     height: 100px;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 .post{
     background-color: #69593C;
@@ -306,6 +315,12 @@ section h2{
     justify-content: center;
     flex-flow: column nowrap;
 }
+.vitrine {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 .product {
   padding: 20px;
   display: flex;
@@ -317,10 +332,35 @@ section h2{
   width: 279px;
   height: 374.75px;
   border-radius: 10px;
+  background-color: white;
   background-image: url(../img/produto.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.img-product:hover {
+  opacity: 0.7;
+  transition: .5s;
+}
+.pop-up-img{
+  font-size: 10px;
+  margin-left: 40%;
+  margin-top:10px;
+  display: flex;
+  gap: 10px;
+}
+.pop-up-img p {
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn-media-query{
+  display: none;
+}
+.icon-media-query{
+  display: none;
 }
 .principal {
   width: 50vw;
@@ -347,6 +387,11 @@ a {
   background-color: #7de3b0;
   color: white;
   border: none;
+}
+.old-price {
+  text-decoration: line-through;
+  display: none;
+  color: #69593c;
 }
 .new-price {
   font-weight: 700;
@@ -438,4 +483,7 @@ li {
 }
 .redes img {
   height: 30px;
+}
+.footer-media-query {
+  display: none;
 }

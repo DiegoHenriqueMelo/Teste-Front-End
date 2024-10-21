@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let priceTotal = 0;
   let cart = [];
   let name = "Kit Bodies manga longa Basics Carters 4 peças";
+  let listItenCart = document.querySelector(".cart-dropdown");
 
   class ItenCart {
     name;
@@ -43,13 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-//   function meunDropdown(){
+  function buyItenCart() {
+    location.reload()
+  }
+  listItenCart.innerHTML = `                   
+   <li class="iten-cart" style="display: flex; flex-flow: row nowrap; align-items: center; justify-content: center; gap: 10px;">
+      <div style="height:100px; width:100px; background-image: url(img/produto.png); background-size: contain; background-repeat: no-repeat;"></div>
+      <div>
+        <p>${localStorage.getItem("name")}</p>
+        <p>${localStorage.getItem("qtd")} X R$75,90</p>
+      </div>
+      <p id="delete">X</p>
+      <hr>
+    </li>`;
 
-//   }
-
-//   document.getElementsByClassName("gaveta").addEventListener("click", meunDropdown());
   document.getElementById("aumentar").addEventListener("click", aumentaQtd);
   document.getElementById("diminuir").addEventListener("click", diminuiQtd);
-//   document.getElementById("buy").addEventListener("click", buyItenCart);
-//   document.getElementById("delete").addEventListener("click", deleteItenCart);
+  document.getElementById("buy").addEventListener("click", buyItenCart);
+  //   document.getElementById("delete").addEventListener("click", deleteItenCart);
 });

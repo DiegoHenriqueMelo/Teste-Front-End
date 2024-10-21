@@ -58,6 +58,19 @@
   .info-site div div span {
     font-size: 10px;
   }
+  .info-produtos{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+  }
+  .info-produtos div button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;  
+    border: none;
+  }
   .vitrine {
     padding: 30px;
     margin-left: 80px;

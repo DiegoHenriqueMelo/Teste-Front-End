@@ -63,15 +63,21 @@ header img {
   width: 100px;
 }
 header button {
-  width: 60px;
-  height: 50px;
   border-radius: 10px;
   border: none;
   background-color: #7de3b0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
 }
-header button img {
-  height: 30px;
-  width: 30px;
+.qtd-inte-cart{
+  border: 1px solid yellow;
+  padding: 7px;
+  background-color: yellow;
+  border-radius: 50%;
 }
 .search {
   padding: 5px;

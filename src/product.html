@@ -19,17 +19,8 @@
             <div class="header-superior">
                 <nav>
                     <ul class="nav-menu">
-                        <li class="gaveta">
+                        <li>
                             <span class="material-symbols-outlined"> menu </span>
-                            <ul class="meun-dropdown">
-                                <li>Menians</li>
-                                <li>Meninos</li>
-                                <li>Acessório</li>
-                                <li>Alimentação</li>
-                                <li>Higiene e cuidados com o bebê</li>
-                                <li>Mamãe</li>
-                                <li>Ofertas</li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -62,33 +53,45 @@
                 </span>
             </div>
             <ul>
-                <li style="color: black;">Institucional
+                <li style="color: black;" class="gaveta">Institucional
                     <ul class="menu-dropdown">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>Inicio ></li>
+                        <li>Quem Somos ></li>
+                        <li>Fale Conosco ></li>
                     </ul>
                 </li>
             </ul>
             <ul>
-                <li style="color: black;">Minha Conta
+                <li style="color: black;" class="gaveta">Minha Conta
                     <ul class="menu-dropdown">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>Criar Conta</li>
+                        <li>Entrar</li>
                     </ul>
                 </li>
             </ul>
-            <button>
+            <button class="gaveta-button">
                 <span class="material-symbols-outlined" style="color: white">
                     shopping_cart
                 </span>
                 <p class="qtd-inte-cart">1</p>
+                <ul class="cart-dropdown">
+
+                </ul>
             </button>
             <ul class="menu-media-query">
-                <li>Menians</li>
+                <li class="gaveta">Meninas
+                    <ul class="cart-dropdown" style="width: 500px;
+                    height: 190px; background-image: url(img/Rectangle\ 10.png); background-repeat: no-repeat; background-position: right;">
+                        <li class="gaveta-interna">Bodies
+                            <ul class="menu-dropdown-interna">
+                                <li>Manga curta</li>
+                                <li>Manga longa</li>
+                            </ul>
+                        </li>
+                        <li>Conjuntos</li>
+                        <li>Macacões</li>
+                    </ul>
+                </li>
                 <li>Meninos</li>
                 <li>Acessório</li>
                 <li>Alimentação</li>
@@ -165,11 +168,11 @@
                     <!-- <div id="buy" onclick="buyItenCart()"> <span class="material-symbols-outlined" style="color: white">
                             shopping_cart
                         </span>Comprar Agora</div> -->
-                        <button id="buy">
-                            <span class="material-symbols-outlined" style="color: white">
-                                shopping_cart
-                            </span>Comprar Agora
-                        </button>
+                    <button id="buy">
+                        <span class="material-symbols-outlined" style="color: white">
+                            shopping_cart
+                        </span>Comprar Agora
+                    </button>
                 </div>
                 <div class="compartilhar">
                     <div class="redes-product">
@@ -234,7 +237,6 @@
                 </div>
                 <div>
                     <p class="new-price">R$75,90</p>
-                    <hr />
                     <p>3X de R$25,30 Sem juros</p>
                     <button class="btn-mobile">Que fofo, eu quero!</button>
                 </div>
@@ -299,41 +301,29 @@
         <div class="footer-mobile">
             <ul>
                 <li>
-                    Institucional<span class="material-symbols-outlined">
-                        add
-                    </span>
-                    <ul class="meun-dropdown">
-                        <li>Inicio</li>
-                        <li>Quam Somos</li>
-                        <li>Fale Conosco</li>
-                    </ul>
+                    Institucional<span class="material-symbols-outlined"> add </span>
                 </li>
                 <li>
-                    Minha Conta<span class="material-symbols-outlined">
-                        add
-                    </span>
-                    <ul class="meun-dropdown">
-                        <li>Entrar</li>
-                        <li>Criar Conta</li>
-                    </ul>
+                    Minha Conta<span class="material-symbols-outlined"> add </span>
                 </li>
-                <li>Fale Conosco<span class="material-symbols-outlined">
-                        add
-                    </span></li>
+                <li>
+                    Fale Conosco<span class="material-symbols-outlined"> add </span>
+                </li>
                 <li>Redes Sociais</li>
             </ul>
             <div class="redes">
-                <img src="img/vetor/vetorFacebook.png" alt="" />
-                <img src="img/vetor/vetorInstagram.png" alt="" />
+                <img src="img/vetor/vetorFacebook.png" alt="Facebook" />
+                <img src="img/vetor/vetorInstagram.png" alt="Instagram" />
             </div>
         </div>
+
         <div class="footer-media-query">
             <div class="options-footer">
                 <div>
                     <p>Meninas</p>
                     <ul>
-                        <li>Bodies
-                            <ul class="meun-dropdown">
+                        <li class="gaveta">Bodies
+                            <ul class="menu-dropdown">
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -349,8 +339,8 @@
                 <div>
                     <p>Meninos</p>
                     <ul>
-                        <li>Bodies
-                            <ul class="meun-dropdown">
+                        <li class="gaveta">Bodies
+                            <ul class="menu-dropdown">
                                 <li></li>
                                 <li></li>
                                 <li> </li>

@@ -10,8 +10,61 @@ html,
 body {
   overflow-x: hidden;
 }
-.menu-dropdown {
+.gaveta,.gaveta-interna {
+  display: block;
+}
+
+.gaveta:hover, .gaveta-interna:hover, .gaveta-button {
+  display: flex;
+  flex-flow: column;
+  transition: 0.5s;
+}
+
+.menu-dropdown{
   display: none;
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.178);
+  flex-flow: column wrap;
+  align-items: start;
+  box-sizing: border-box;
+  z-index: 1;
+  position: absolute;
+}
+.cart-dropdown{
+  display: none;
+  margin-top: 12%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.178);
+  flex-flow: column wrap;
+  align-items: start;
+  box-sizing: border-box;
+  z-index: 1;
+  position: absolute;
+}
+.menu-dropdown-interna {
+  display: none;
+  margin-left: 70%;
+  border-radius: 5px;
+  flex-flow: column wrap;
+  align-items: end;
+  justify-content: end;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gaveta:hover .menu-dropdown {
+  display: flex;
+}
+.gaveta-interna:hover .menu-dropdown-interna {
+  display: flex;
+}
+.gaveta-button:hover .cart-dropdown {
+  display: flex;
 }
 
 /*! BODY */
@@ -62,7 +115,7 @@ header img {
   height: 50px;
   width: 100px;
 }
-header button {
+.gaveta-button{
   border-radius: 10px;
   border: none;
   background-color: #7de3b0;
